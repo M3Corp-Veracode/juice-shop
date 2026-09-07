@@ -29,7 +29,7 @@ jobs:
       - name: Veracode Upload And Scan
         uses: veracode/veracode-uploadandscan-action@0.2.10
         with:
-          appname: 'VK - ${{ github.repository }}'
+          appname: '${{ github.repository }}'
           createprofile: true
           filepath: 'veracode.zip'
           vid: '${{ secrets.VERACODE_API_ID }}'
